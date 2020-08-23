@@ -1,4 +1,4 @@
-const databaseFile = './.data/rbx-sqlite3-db003.db'; // If you need to reset EVERYTHING, you can change this.
+const databaseFile = './.data/rbx-sqlite3-db003.db';
 
 const tables = [ // These are created once if alwaysCreateTables is false, however if it is set to true these all will be made each time (will not reset data, but will create any new table entries)
     "table1", // All tables have two rows, key and value
@@ -7,13 +7,10 @@ const tables = [ // These are created once if alwaysCreateTables is false, howev
 ];
 
 const alwaysCreateTables = true;
-
-const ApiToken = "USE A PASSWORD GENERATOR"; // Highly recommended: https://www.grc.com/passwords.htm
-
+const ApiToken = "USE A PASSWORD GENERATOR";
 const tableKeyLength = 150;
 const tableValueLength = 3500;
-
-const getAsyncAllowStar = true; // Allow "*" to be sent to the server to return all data from a table.
+const getAsyncAllowStar = true;
 
 /*
   SETTINGS ABOVE
